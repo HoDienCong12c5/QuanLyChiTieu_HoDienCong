@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="700dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    tools:context=".DAO.TkChiTieu_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:layout_height="50dp">
+       <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+           android:id="@+id/btnNgayBD_TKCT_Fragment"
+           android:layout_width="115dp"
+           android:layout_height="40dp"
+           android:background="@drawable/custom_button2"
+           android:text="Ngày bắt đầu"></br.com.simplepass.loading_button_lib.customViews.CircularProgressButton>
+
+       <TextView
+           android:id="@+id/txtNgayBD_TKCT_Fragment"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_marginLeft="10dp"
+           android:background="@drawable/custom_textbox"
+           android:gravity="center"
+           android:hint="Ngày Bắt đầu "
+           android:textAlignment="center"
+           android:textSize="20dp"
+           android:textStyle="bold"></TextView>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+            android:id="@+id/btnNgayKT_ThongKeCT_Fragment"
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_button2"
+            android:text="Ngày kết thúc"></br.com.simplepass.loading_button_lib.customViews.CircularProgressButton>
+
+        <TextView
+            android:id="@+id/txtNgayKT_TK_Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_textbox"
+            android:gravity="center"
+            android:hint="Ngày Kết thúc "
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+
+           android:layout_height="56dp"
+           android:orientation="horizontal">
+
+               <TextView
+                   android:id="@+id/textView2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Tổng tiền chi :"
+                   android:textSize="20dp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/txtTienChi_ThongKe_Fragment"
+                   android:textSize="30dp"
+                   android:textStyle="bold"
+                   android:gravity="right"
+                   android:paddingRight="10dp"
+                   android:background="@drawable/custom_textbox"
+                   android:textColor="@color/teal_700"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text=""></TextView>
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="55dp"
+           android:orientation="horizontal">
+
+           <TextView
+               android:id="@+id/textViewsdsd"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Tổng tiền thu :"
+               android:textSize="20dp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:textSize="30dp"
+               android:textColor="@color/maudo"
+               android:gravity="right"
+               android:paddingRight="10dp"
+               android:textStyle="bold"
+               android:id="@+id/txtTienThu_ThongKe_Fragment"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/custom_textbox"
+               android:text=""></TextView>
+       </LinearLayout>
+       <LinearLayout
+           android:paddingRight="10dp"
+           android:paddingLeft="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:orientation="horizontal">
+
+           <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+               android:id="@+id/btnDuyet_ThongKeCT_Fragment"
+               android:layout_width="123dp"
+               android:layout_height="40dp"
+               android:background="@drawable/et_bg"
+
+               android:text="Duyệt DS" />
+
+           <com.github.mikephil.charting.charts.PieChart
+               android:id="@+id/chart_FragmentTK"
+               android:layout_width="280dp"
+               android:layout_height="190dp"
+               android:layout_marginLeft="-20dp" />
+
+       </LinearLayout>
+
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical" >
+
+               <ListView
+                   android:id="@+id/lv_TKChiTieu_Fragment"
+                   android:layout_width="match_parent"
+                   android:layout_height="800dp"></ListView>
+           </LinearLayout>
+       </ScrollView>
+   </LinearLayout>
+</ScrollView>

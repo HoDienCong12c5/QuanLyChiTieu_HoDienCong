@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mauXam"
+    android:orientation="vertical"
+    tools:context=".QuanTrong.ChinhSuaTongTheLoaiCtT">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="239dp"
+        app:srcCompat="@drawable/anhnen_edit" />
+    <androidx.cardview.widget.CardView android:layout_margin="30dp"
+        app:cardCornerRadius="20dp"
+        android:padding="20dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mời bạn viết tên loại chi tiêu"
+                android:textSize="20dp"
+                android:textColor="@color/ic_launcher_background"
+                android:textStyle="bold"
+                android:gravity="center"
+
+                ></TextView>
+            <EditText
+                android:id="@+id/txtTen__EditTongTheCt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"></EditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Mời bạn chọn thể loại chi tiêu"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/ic_launcher_background"
+
+                android:gravity="center"
+
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <RadioGroup
+                android:id="@+id/rdgTong__EditTongTheCt"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/rdbChitieu_EditTongTheCt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chi tiêu "
+                    android:enabled="false"
+                    android:textSize="20dp">
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/rdbThuLn_EditTongTheCt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="Thu lợi nhuận"
+                    android:textSize="20dp">
+
+                </RadioButton>
+            </RadioGroup>
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/btnLuu_EditTongTheCt"
+                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:text="lưu dữ liệu/ trở về"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button2">
+
+            </br.com.simplepass.loading_button_lib.customViews.CircularProgressButton>
+
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/btnXoa_EditTongTheCt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_button2"
+                android:text="Xóa " />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+</ScrollView>

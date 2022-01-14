@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/light_blue_A200"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+<androidx.cardview.widget.CardView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/mauhongxam"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:collapseColumns="2">
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="@color/light_blue_900"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:text="Tên chi tiêu :" />
+
+            <TextView
+                android:id="@+id/txtTenCT_dongtongCT"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:ems="10"
+                android:textSize="18dp"
+                android:textColor="@color/light_blue_900"
+                android:gravity="right"
+                android:inputType="textPersonName"
+                android:text="" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tdfextView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:textColor="@color/light_blue_900"
+                android:textSize="18dp"
+                android:text="Thể loại :" />
+
+            <TextView
+                android:id="@+id/txtTheLoai_dongtongCT"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:inputType="textPersonName"
+                android:text="" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/txtid_dongtongCT"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+
+            android:layout_weight="1"
+            android:text="" />
+    </TableLayout>
+</androidx.cardview.widget.CardView>
+
+
+</androidx.cardview.widget.CardView>
